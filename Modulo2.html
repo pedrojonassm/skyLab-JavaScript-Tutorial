@@ -16,13 +16,14 @@
       }
     </script>
     -->
-
-    <!--Aula 2-->
+    <!--
     <div id = "app">
       <input type="text" name="nome" class="nome"/>
       <button class = "botao">Adicionar</button>
     </div>
     <script>
+      //Aula 2
+      /*
       //var inputElement = document.getElementById("nome");
       //var inputElement = document.getElementsByTagName("input"); // Retorna um vetor
       //var inputElement = document.getElementsByClassName("nome"); // retorna uma lista
@@ -36,7 +37,30 @@
         var text = inputElement.value;
         alert("O nome escrito foi: "+text);
       }
+      */
       
     </script>
+    -->
+    <div id = "app">
+      <input id="nome"/>
+    </div>
+
+    <script>
+      // Aula 3
+      var linkElement = document.createElement('a'); // a = link
+      linkElement.setAttribute('href', 'https://ifunny.co/fun/H8qBfSTT7?s=cl');
+      linkElement.setAttribute('title', 'Site da Rocketseat');
+
+      var textElement = document.createTextNode("Um vídeo muito bom kkk");
+
+      linkElement.appendChild(textElement);
+
+      var containerElement = document.querySelector("#app");
+      containerElement.appendChild(linkElement);
+
+      var inputElement = document.querySelector('#nome')
+      containerElement.removeChild(inputElement);
+    </script>
+
   </body>
 </html>
