@@ -3,7 +3,8 @@
     <title>Aula 1</title>
   </head>
   <body>
-    
+    <!--Aula 1-->
+    <!--
     <div id = "app">
       <button onclick="mostraAlerta()">Pressione</button>
       <button onmouseover="mostraAlerta()">mouse em cima</button>
@@ -13,6 +14,29 @@
       function mostraAlerta(){
         alert("botão foi pressionado");
       }
+    </script>
+    -->
+
+    <!--Aula 2-->
+    <div id = "app">
+      <input type="text" name="nome" class="nome"/>
+      <button class = "botao">Adicionar</button>
+    </div>
+    <script>
+      //var inputElement = document.getElementById("nome");
+      //var inputElement = document.getElementsByTagName("input"); // Retorna um vetor
+      //var inputElement = document.getElementsByClassName("nome"); // retorna uma lista
+      //var inputElement = document.querySelector('div#app input'); // dentro do dive com id = app, dentro do input. Retorna apenas o primeiro elemento
+      //var inputElement = document.querySelector('input[name = nome]'); // dentro do dive com id = app, dentro do input
+      //var inputElement = document.querySelectorAll('div#app input'); // dentro do dive com id = app, dentro do input. Retorna todos os elementos
+      //console.log(inputElement);
+      var inputElement = document.querySelector("input[name=nome");
+      var btnElement = document.querySelector('button.botao'); //.bota -> class = botao
+      btnElement.onclick = function(){
+        var text = inputElement.value;
+        alert("O nome escrito foi: "+text);
+      }
+      
     </script>
   </body>
 </html>
